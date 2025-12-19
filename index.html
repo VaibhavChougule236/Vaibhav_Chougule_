@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark light">
+
+    <title>Vaibhav Chougule | Java Full Stack Engineer</title><!-- Favicon -->
+
+    <link rel="icon" href="assets/favicon-32x32.png" sizes="any">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="description"
+        content="Vaibhav Chougule - Java Full Stack Engineer specializing in building scalable, secure, and high-performance applications using Java, Spring Boot, and modern web technologies.">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/style.css" as="style" onload="this.rel='stylesheet'">
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js" defer></script>
+    <script src="script/script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <!-- Header: branding, navigation, theme toggle, mobile menu -->
+        <div class="header-inner">
+            <a href="#hero" class="logo">Vaibhav</a>
+
+            <nav class="nav" id="nav">
+                <a href="#hero" class="active" style="--i:1">Home</a>
+                <a href="#about" style="--i:2">About</a>
+                <a href="#skills" style="--i:3">Skills</a>
+                <a href="#projects" style="--i:4">Projects</a>
+                <a href="#experience" style="--i:5">Experience</a>
+                <a href="#open-source" style="--i:6">Open Source</a>
+                <a href="#certificates" style="--i:7">Certificates</a>
+                <a href="#extracurricular" style="--i:8">Leadership</a>
+                <a href="#blogs" style="--i:9">Blogs</a>
+                <a href="#contact" style="--i:10">Contact</a>
+            </nav>
+
+
+
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <span class="sun">☀</span>
+                    <span class="moon">☾</span>
+                </button>
+
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <!-- Home section: primary introduction, role, value proposition, and visual identity -->
+            <div class="hero-grid">
+
+                <div class="hero-left">
+                    <span class="hero-chip">Java Full Stack Engineer</span>
+
+                    <h1 class="hero-title">
+                        Hi, I’m <span class="accent">Vaibhav</span><br>
+                        I build scalable software
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        I design and develop secure, high-performance full-stack applications
+                        using Java, Spring Boot, modern JavaScript, and cloud-ready architectures.
+                        My focus is on clean APIs, reliable systems, and production-grade solutions.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn-primary">View Projects</a>
+                        <a href="#contact" class="btn-outline">Contact Me</a>
+                    </div>
+                </div>
+
+                <div class="hero-right">
+                    <div class="profile-wrapper">
+                        <img src="assets/Vaibhav.jpg" alt="Vaibhav Chougule" class="profile-img">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="about">
+            <!-- About section: engineering background and technical focus -->
+            <div class="about-grid">
+
+                <div class="about-content">
+                    <h2 class="section-title">About Me</h2>
+
+                    <p>
+                        I’m a Java Full Stack Engineer with a strong backend foundation and
+                        a practical frontend mindset. I enjoy building scalable systems,
+                        designing secure APIs, and writing clean, maintainable code that
+                        performs reliably in real-world production environments.
+                    </p>
+
+                    <p>
+                        During my internship and project work, I have developed payment
+                        integration microservices, implemented Spring Security with
+                        encryption-based authentication, and worked with cloud-ready
+                        architectures using AWS and Docker.
+                    </p>
+
+                    <p>
+                        Beyond internships, I actively work on full-stack projects,
+                        contribute to open source, and continuously strengthen my problem-
+                        solving skills through DSA and system design practice.
+                    </p>
+                </div>
+
+                <div class="about-tech">
+                    <div class="stack-card">
+                        <div class="stack-header">tech.stack()</div>
+                        <ul class="stack-list">
+                            <li><span>Backend</span><em id="typed-backend"></em></li>
+                            <li><span>Frontend</span><em id="typed-frontend"></em></li>
+                            <li><span>Database</span><em id="typed-db"></em></li>
+                            <li><span>DevOps</span><em id="typed-devops"></em></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="skills">
+            <!-- Skills section: core technologies and engineering domains -->
+            <div class="skills-wrapper">
+
+                <div class="skills-header">
+                    <h2 class="section-title">Skills</h2>
+                    <p>
+                        My technical skills are organized by engineering domains, with a
+                        focus on backend systems, full-stack development, and
+                        production-ready tools.
+                    </p>
+                </div>
+
+                <div class="skills-domains">
+
+                    <div class="skills-domain">
+                        <h3>Backend & Architecture</h3>
+                        <div class="skills-list">
+                            <span class="skill-chip">Java</span>
+                            <span class="skill-chip">Spring Boot</span>
+                            <span class="skill-chip">Spring Security</span>
+                            <span class="skill-chip">REST APIs</span>
+                            <span class="skill-chip">Microservices</span>
+                            <span class="skill-chip">JWT</span>
+                            <span class="skill-chip">OAuth2</span>
+                            <span class="skill-chip">HmacSHA256</span>
+                            <span class="skill-chip">Spring Cloud</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-domain">
+                        <h3>Frontend</h3>
+                        <div class="skills-list">
+                            <span class="skill-chip">HTML</span>
+                            <span class="skill-chip">CSS</span>
+                            <span class="skill-chip">JavaScript</span>
+                            <span class="skill-chip">Responsive UI</span>
+                            <span class="skill-chip">MVC Architecture</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-domain">
+                        <h3>Databases</h3>
+                        <div class="skills-list">
+                            <span class="skill-chip">MySQL</span>
+                            <span class="skill-chip">PostgreSQL</span>
+                            <span class="skill-chip">SQL</span>
+                            <span class="skill-chip">JPA</span>
+                            <span class="skill-chip">Hibernate</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-domain">
+                        <h3>Cloud & DevOps</h3>
+                        <div class="skills-list">
+                            <span class="skill-chip">AWS EC2</span>
+                            <span class="skill-chip">AWS RDS</span>
+                            <span class="skill-chip">Docker</span>
+                            <span class="skill-chip">CI/CD</span>
+                            <span class="skill-chip">Linux</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-domain">
+                        <h3>Programming & Core</h3>
+                        <div class="skills-list">
+                            <span class="skill-chip">DSA</span>
+                            <span class="skill-chip">OOP</span>
+                            <span class="skill-chip">Design Patterns</span>
+                            <span class="skill-chip">SDLC</span>
+                            <span class="skill-chip">Unit Testing</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-domain">
+                        <h3>Tools</h3>
+                        <div class="skills-list">
+                            <span class="skill-chip">Git</span>
+                            <span class="skill-chip">GitHub</span>
+                            <span class="skill-chip">Maven</span>
+                            <span class="skill-chip">Postman</span>
+                            <span class="skill-chip">Swagger</span>
+                            <span class="skill-chip">IntelliJ IDEA</span>
+                            <span class="skill-chip">VS Code</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <section id="projects">
+            <!-- Projects section: real-world applications and engineering work -->
+            <div class="projects-wrapper">
+
+                <div class="projects-header">
+                    <h2 class="section-title">Projects</h2>
+                    <p>
+                        A selection of projects showcasing my experience with backend systems,
+                        full-stack development, and production-ready engineering practices.
+                    </p>
+                </div>
+
+                <div class="projects-grid">
+
+                    <article class="project-card">
+                        <div class="project-meta">
+                            <span class="project-tag">Microservices</span>
+                            <span class="project-tag">Deployed</span>
+                        </div>
+
+                        <h3>Payment Integration System</h3>
+
+                        <p>
+                            Designed and developed a modular microservices-based payment system
+                            with secure REST APIs, authentication, and third-party payment
+                            integrations. Deployed on AWS using Docker for scalability
+                            and reliability.
+                        </p>
+
+                        <ul class="project-tech">
+                            <li>Java</li>
+                            <li>Spring Boot</li>
+                            <li>Spring Security</li>
+                            <li>AWS</li>
+                            <li>Docker</li>
+                        </ul>
+
+                        <div class="project-actions">
+                            <a href="#" class="project-link">GitHub</a>
+                            <a href="#" class="project-link">Live</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-meta">
+                            <span class="project-tag">Full Stack</span>
+                            <span class="project-tag muted">Monolith</span>
+                        </div>
+
+                        <h3>AI-Integrated Blogging Platform</h3>
+
+                        <p>
+                            Built a full-stack blogging platform with role-based access,
+                            AI-powered post summarization and translation, and secure
+                            OAuth2 authentication. Designed as a monolith to focus on
+                            backend correctness and feature completeness.
+                        </p>
+
+                        <ul class="project-tech">
+                            <li>Java</li>
+                            <li>Spring Boot</li>
+                            <li>MySQL</li>
+                            <li>OAuth2</li>
+                            <li>OpenAI</li>
+                        </ul>
+
+                        <div class="project-actions">
+                            <a href="#" class="project-link">GitHub</a>
+                            <a href="#" class="project-link muted">Architecture</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-meta">
+                            <span class="project-tag">Core Java</span>
+                            <span class="project-tag muted">Local</span>
+                        </div>
+
+                        <h3>Bank Management System</h3>
+
+                        <p>
+                            Developed a Java-based banking system focusing on transaction
+                            integrity, validation, and database interaction using JDBC.
+                            Emphasized clean business logic separation and data consistency.
+                        </p>
+
+                        <ul class="project-tech">
+                            <li>Java</li>
+                            <li>JDBC</li>
+                            <li>SQL</li>
+                            <li>OOP</li>
+                        </ul>
+
+                        <div class="project-actions">
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="experience">
+            <!-- Experience section: real-world engineering exposure -->
+            <div class="experience-wrapper">
+
+                <div class="experience-header">
+                    <h2 class="section-title">Experience</h2>
+                    <p>
+                        Practical experience building backend systems, integrating real-world
+                        services, and collaborating in professional and open-source environments.
+                    </p>
+                </div>
+
+                <div class="experience-list">
+
+                    <article class="experience-card">
+                        <span class="experience-duration">Jun 2024 – Jul 2024</span>
+
+                        <h3>Java Developer Intern</h3>
+                        <h4>HulkHire Tech</h4>
+
+                        <p>
+                            Worked on backend development for payment integration systems using
+                            Java and Spring Boot. Focused on designing secure APIs, implementing
+                            authentication mechanisms, and ensuring data integrity across services.
+                        </p>
+
+                        <ul class="experience-highlights">
+                            <li>Built REST APIs with Spring Boot and layered architecture</li>
+                            <li>Implemented secure authentication using HmacSHA256</li>
+                            <li>Integrated third-party payment gateways</li>
+                            <li>Deployed services using Docker on AWS EC2</li>
+                        </ul>
+                    </article>
+
+                    <article class="experience-card">
+                        <span class="experience-duration">May 2025 – Present</span>
+
+                        <h3>Open Source Contributor</h3>
+                        <h4>GirlScript Summer of Code (GSSoC)</h4>
+
+                        <p>
+                            Contributing to open-source projects by fixing issues, improving
+                            backend logic, and collaborating with developers through GitHub
+                            workflows and code reviews.
+                        </p>
+
+                        <ul class="experience-highlights">
+                            <li>Resolved backend issues and feature bugs</li>
+                            <li>Collaborated via pull requests and reviews</li>
+                            <li>Gained experience working with existing large codebases</li>
+                        </ul>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="open-source">
+
+            <!-- Open Source section: collaboration, community, and contribution journey -->
+            <div class="opensource-wrapper">
+                <div class="opensource-surface">
+                    <div class="opensource-grid">
+
+
+                        <!-- Content -->
+                        <div class="opensource-content">
+                            <h2 class="section-title">Open Source</h2>
+
+                            <p>
+                                My open-source journey has helped me understand how real-world
+                                systems are built, reviewed, and maintained by distributed teams.
+                                I actively contribute to backend-focused repositories, learning
+                                production-grade coding standards and collaboration workflows.
+                            </p>
+
+                            <p>
+                                Through programs like GirlScript Summer of Code and independent
+                                contributions, I’ve worked with existing Java and Spring Boot
+                                codebases, fixed bugs, improved API behavior, and participated
+                                in pull-request reviews.
+                            </p>
+
+                            <p>
+                                Open source has strengthened my ability to read unfamiliar code,
+                                reason about system design decisions, and collaborate effectively
+                                using GitHub-based workflows.
+                            </p>
+
+                            <a href="https://github.com/yourusername" target="_blank" class="btn-outline">
+                                View GitHub Profile
+                            </a>
+                        </div>
+
+
+                        <!-- Image Strip -->
+                        <div class="image-carousel">
+                            <div class="image-frame">
+                                <img src="assets/GSSoC_ID.jpg" class="carousel-image active" alt="Open Source Identity">
+                                <img src="assets/certificates/Vaibhav_Annaso_Chougule__GSSoC_certificate.png"
+                                    class="carousel-image" alt="Certificate">
+                                <img src="assets/GSSoC-Leaderboard.jpg" class="carousel-image" alt="Certificate">
+                                <img src="assets/7th-Rank.jpg" class="carousel-image" alt="Vaibhav at Event">
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Popup -->
+        <div class="image-popup" id="imagePopup">
+            <span class="popup-close" id="popupClose">×</span>
+            <img id="popupImage" src="" alt="Expanded view">
+        </div>
+
+
+        <section id="certificates">
+            <div class="certificates-wrapper">
+
+                <div class="certificates-header">
+                    <h2 class="section-title">Certificates</h2>
+                    <p>
+                        Selected certifications that validate my technical foundation,
+                        problem-solving skills, and exposure to industry-relevant practices.
+                    </p>
+                </div>
+
+                <div class="certificates-grid">
+
+                    <!-- 1. AWS -->
+                    <article class="certificate-card">
+                        <div class="certificate-preview">
+                            <img src="assets/certificates/AWS_Academy_Graduate.png" alt="AWS Academy Cloud Foundations"
+                                class="cert-img">
+                        </div>
+
+                        <h3>AWS Academy Cloud Foundations</h3>
+                        <p class="certificate-org">Amazon Web Services (AWS)</p>
+
+                        <button class="btn-outline view-cert-btn" data-title="AWS Academy Cloud Foundations"
+                            data-org="Amazon Web Services (AWS)" data-date="2025"
+                            data-desc="Industry-recognized certification validating foundational knowledge of cloud computing concepts, AWS global infrastructure, EC2, S3, IAM, VPC, security, pricing models, and cloud best practices."
+                            data-img="assets/certificates/AWS_Academy_Graduate.png"
+                            data-url="https://www.credly.com/go/d881DXGt">
+                            View Details
+                        </button>
+
+                        <span class="certificate-meta">Issued: 2025</span>
+                    </article>
+
+                    <!-- 2. Java Full Stack -->
+                    <article class="certificate-card">
+                        <div class="certificate-preview">
+                            <img src="assets/certificates/Java_Full_Stack_Developement-Udemy.png"
+                                alt="Java Full Stack Development" class="cert-img">
+                        </div>
+
+                        <h3>Java Full Stack Development</h3>
+                        <p class="certificate-org">Udemy</p>
+
+                        <button class="btn-outline view-cert-btn" data-title="Java Full Stack Development"
+                            data-org="Udemy" data-date="2025"
+                            data-desc="Comprehensive full-stack development training covering Java, Spring Boot, REST APIs, Hibernate, SQL, HTML, CSS, JavaScript, and building scalable web applications."
+                            data-img="assets/certificates/Java_Full_Stack_Developement-Udemy.png"
+                            data-url="https://raw.githubusercontent.com/VaibhavChougule236/my-certificates-and-achievements/main/My-Certificates/Java%20Full%20Stack%20Developement-Udemy.pdf">
+                            View Details
+                        </button>
+
+                        <span class="certificate-meta">Issued: 2025</span>
+                    </article>
+
+                    <!-- 3. Software Engineering Intern -->
+                    <article class="certificate-card">
+                        <div class="certificate-preview">
+                            <img src="assets/certificates/SWE_Intern-Certificate-HackerRank.png"
+                                alt="Software Engineering Intern" class="cert-img">
+                        </div>
+
+                        <h3>Software Engineering Intern</h3>
+                        <p class="certificate-org">HackerRank</p>
+
+                        <button class="btn-outline view-cert-btn" data-title="Software Engineering Intern"
+                            data-org="HackerRank" data-date="2024"
+                            data-desc="Hands-on virtual internship program focused on software engineering fundamentals, coding best practices, problem-solving, and real-world development workflows."
+                            data-img="assets/certificates/SWE_Intern-Certificate-HackerRank.png"
+                            data-url="https://raw.githubusercontent.com/VaibhavChougule236/my-certificates-and-achievements/main/My-Certificates/Java%20Internship%20Completion%20certificate.pdf">
+                            View Details
+                        </button>
+
+                        <span class="certificate-meta">Issued: 2024</span>
+                    </article>
+
+                    <!-- 4. Java DSA -->
+                    <article class="certificate-card">
+                        <div class="certificate-preview">
+                            <img src="assets/certificates/Java_DSA-Scaler.png" alt="Java Data Structures and Algorithms"
+                                class="cert-img">
+                        </div>
+
+                        <h3>Java Data Structures & Algorithms</h3>
+                        <p class="certificate-org">Scaler</p>
+
+                        <button class="btn-outline view-cert-btn" data-title="Java Data Structures & Algorithms"
+                            data-org="Scaler" data-date="2024"
+                            data-desc="Strong foundation in data structures and algorithms using Java, including arrays, strings, recursion, sorting, searching, and core problem-solving techniques."
+                            data-img="assets/certificates/Java_DSA-Scaler.png"
+                            data-url="https://raw.githubusercontent.com/VaibhavChougule236/my-certificates-and-achievements/main/My-Certificates/certificates-(Java%20DSA)%20Scaler.png">
+                            View Details
+                        </button>
+
+                        <span class="certificate-meta">Issued: 2024</span>
+                    </article>
+
+                    <!-- 5. Accenture -->
+                    <article class="certificate-card">
+                        <div class="certificate-preview">
+                            <img src="assets/certificates/Software_Engineer_Job_Simulation–Accenture.png"
+                                alt="Accenture Software Engineer Job Simulation" class="cert-img">
+                        </div>
+
+                        <h3>Software Engineer Job Simulation</h3>
+                        <p class="certificate-org">Accenture</p>
+
+                        <button class="btn-outline view-cert-btn" data-title="Software Engineer Job Simulation"
+                            data-org="Accenture" data-date="2024"
+                            data-desc="Completed a real-world job simulation replicating software engineering tasks, including requirement analysis, problem-solving, technical decision-making, and solution design."
+                            data-img="assets/certificates/Software_Engineer_Job_Simulation–Accenture.png"
+                            data-url="https://raw.githubusercontent.com/VaibhavChougule236/my-certificates-and-achievements/main/My-Certificates/Software%20Engineer%20job%20simulation%20-%20Accenture.pdf">
+                            View Details
+                        </button>
+
+                        <span class="certificate-meta">Issued: 2024</span>
+                    </article>
+
+                    <!-- 6. Oracle DB -->
+                    <article class="certificate-card">
+                        <div class="certificate-preview">
+                            <img src="assets/certificates/Database_For_Developers-Oracle.png"
+                                alt="Oracle Database for Developers" class="cert-img">
+                        </div>
+
+                        <h3>Database for Developers</h3>
+                        <p class="certificate-org">Oracle</p>
+
+                        <button class="btn-outline view-cert-btn" data-title="Database for Developers" data-org="Oracle"
+                            data-date="2024"
+                            data-desc="Certification covering SQL fundamentals, relational database concepts, schema design, joins, constraints, and practical database usage for backend development."
+                            data-img="assets/certificates/Database_For_Developers-Oracle.png"
+                            data-url="https://raw.githubusercontent.com/VaibhavChougule236/my-certificates-and-achievements/main/My-Certificates/Database%20for%20Deelopers%20-%20Oracle.pdf">
+                            View Details
+                        </button>
+
+                        <span class="certificate-meta">Issued: 2024</span>
+                    </article>
+
+                </div>
+
+                <!-- View All -->
+                <div style="text-align:center; margin-top:40px;">
+                    <a href="https://github.com/VaibhavChougule236/my-certificates-and-achievements" target="_blank"
+                        class="btn-outline">
+                        View All Certificates
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Certificate Popup -->
+        <div class="certificate-popup" id="certificatePopup">
+            <div class="certificate-modal">
+                <span class="certificate-popup-close" id="certPopupClose">×</span>
+
+                <div class="certificate-modal-img">
+                    <img id="certPopupImg" src="" alt="Certificate Preview">
+                </div>
+
+                <div class="certificate-modal-content">
+                    <h3 id="certPopupTitle"></h3>
+                    <p class="cert-org" id="certPopupOrg"></p>
+                    <p><strong>Issued:</strong> <span id="certPopupDate"></span></p>
+                    <p id="certPopupDesc"></p>
+
+                    <a id="certPopupUrl" href="#" target="_blank" class="btn-outline"
+                        style="margin-top:15px; display:inline-block;">
+                        Verify Certificate
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <section id="extracurricular">
+            <div class="extracurricular-wrapper">
+
+                <!-- Section Header -->
+                <div class="extracurricular-header">
+                    <h2 class="section-title">Leadership & Activities</h2>
+                    <p>
+                        Positions of responsibility that strengthened my leadership,
+                        coordination, and organizational skills beyond academics.
+                    </p>
+                </div>
+
+                <!-- ITSA -->
+                <div class="leadership-surface">
+                    <div class="leadership-grid">
+
+                        <div class="leadership-media">
+                            <div class="image-frame">
+                                <img src="assets/Leadership/ITESA-IN.jpeg" class="lead-image active" alt="ITSA Event">
+                                <img src="assets/Leadership/ITESA-Welcome.jpeg" class="lead-image" alt="ITSA Workshop">
+                                <img src="assets/Leadership/Itesa-Group.jpeg" class="lead-image" alt="ITSA Activity">
+                            </div>
+                        </div>
+
+                        <div class="leadership-content">
+                            <span class="role-badge">Secretary</span>
+                            <h3>ITESA – Information Technology Students Association</h3>
+
+                            <p>
+                                Served as Secretary of ITESA, associated with IT Department, JJMCOE.
+                            </p>
+
+                            <ul class="role-points">
+                                <li>Coordinated workshops, seminars, and technical events for IT students</li>
+                                <li>Collaborated with faculty and student teams for inter-department activities</li>
+                                <li>Contributed to smooth planning and execution of academic initiatives</li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- E-CELL -->
+                <div class="leadership-surface">
+                    <div class="leadership-grid">
+
+                        <div class="leadership-media">
+                            <div class="image-frame">
+                                <img src="assets/Leadership/IIT5.jpg" class="lead-image active" alt="E-Cell Event">
+                                <img src="assets/Leadership/IIT6.jpg" class="lead-image" alt="Startup Meet">
+                                <img src="assets/Leadership/IIT8.jpg" class="lead-image" alt="Pitch Session">
+                                <img src="assets/Leadership/IIT11.jpg" class="lead-image" alt="Startup Meet">
+                                <img src="assets/Leadership/IIT4.jpg" class="lead-image" alt="Pitch Session">
+                                <img src="assets/Leadership/IIT9.jpg" class="lead-image" alt="Startup Meet">
+                                <img src="assets/Leadership/Iitbombay.jpg" class="lead-image" alt="Pitch Session">
+                            </div>
+                        </div>
+
+                        <div class="leadership-content">
+                            <span class="role-badge accent">Treasurer</span>
+                            <h3>Entrepreneurship Cell (E-Cell), JJMCOE</h3>
+
+                            <p>
+                                Served as Treasurer of the Entrepreneurship Cell, associated with E-Cell, IIT Bombay.
+                            </p>
+
+                            <ul class="role-points">
+                                <li>Contributed to budgeting, expense tracking, and financial reporting as part of the
+                                    E-Cell finance team</li>
+                                <li>Supported funding coordination and resource allocation for National Entrepreneurship
+                                    Challenge events</li>
+                                <li>Part of the core team that achieved <strong>AIR 113</strong> in the National
+                                    Entrepreneurship Challenge (IIT Bombay)</li>
+                                <li>Collaborated with core members to ensure smooth execution of startup and
+                                    innovation-driven events</li>
+                                <li>Represented the institution as a delegate at <strong>E-Summit 2025, IIT
+                                        Bombay</strong></li>
+                            </ul>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="blogs">
+            <!-- Blogs section: technical writing & learning -->
+            <div class="blogs-wrapper">
+
+                <div class="blogs-header">
+                    <h2 class="section-title">Blogs & Writing</h2>
+                    <p>
+                        Technical articles and learnings based on real-world backend development,
+                        system design decisions, and engineering experience.
+                    </p>
+                </div>
+
+                <div class="blogs-grid">
+
+                    <!-- Blog 1: Interview Experience -->
+                    <article class="blog-card">
+                        <div class="blog-media">
+                            <img src="assets/blogs/interview-experience.jpg" class="blog-image active"
+                                alt="Software Engineering Interview Experience">
+                        </div>
+
+                        <div class="blog-content">
+                            <h3>My Software Engineering Interview Experience</h3>
+
+                            <p class="blog-text">
+                                Attending technical interviews helped me understand how companies evaluate
+                                problem-solving ability, core Java fundamentals, and real project discussions.
+                                This experience highlighted the importance of clarity, structured thinking,
+                                and explaining design decisions effectively.
+                            </p>
+
+                            <div class="blog-actions">
+                                <button class="blog-toggle">Read more</button>
+                                <a href="https://www.linkedin.com/" target="_blank" class="blog-link">
+                                    Read on LinkedIn →
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Blog 2: E-Summit IIT Bombay -->
+                    <article class="blog-card">
+                        <div class="blog-media">
+                            <img src="assets/Leadership/IIT5.jpg" class="blog-image active" alt="E-Summit IIT Bombay">
+                            <img src="assets/Leadership/IIT4.jpg" class="blog-image" alt="Startup talks at IIT Bombay">
+                            <img src="assets/Leadership/IIT6.jpg" class="blog-image" alt="Entrepreneurship sessions">
+                            <img src="assets/Leadership/IIT9.jpg" class="blog-image" alt="Innovation showcase">
+                            <img src="assets/Leadership/IIT8.jpg" class="blog-image" alt="Networking at E-Summit">
+                        </div>
+
+                        <div class="blog-content">
+                            <h3>Key Learnings from E-Summit 2025 at IIT Bombay</h3>
+
+                            <p class="blog-text">
+                                Visiting E-Summit at IIT Bombay provided exposure to startup ecosystems,
+                                product thinking, innovation strategies, and real-world business challenges.
+                                Interacting with founders and professionals broadened my perspective beyond
+                                pure development into scalable system and product design.
+                            </p>
+
+                            <div class="blog-actions">
+                                <button class="blog-toggle">Read more</button>
+                                <a href="https://www.linkedin.com/" target="_blank" class="blog-link">
+                                    Read on LinkedIn →
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Blog 3: Teacher’s Day – Teaching DSA -->
+                    <article class="blog-card">
+                        <div class="blog-media">
+                            <img src="assets/Leadership/Teachers Day.jpg" class="blog-image active"
+                                alt="Teaching DSA basics">
+
+                        </div>
+
+                        <div class="blog-content">
+                            <h3>Teaching Basic DSA on Teacher’s Day: A Learning Experience</h3>
+
+                            <p class="blog-text">
+                                Teaching basic data structures to juniors reinforced my own understanding
+                                of fundamentals. Explaining arrays, loops, and logic in simple terms improved
+                                my communication skills and emphasized the importance of strong foundations
+                                in software engineering.
+                            </p>
+
+                            <div class="blog-actions">
+                                <button class="blog-toggle">Read more</button>
+                                <a href="https://www.linkedin.com/" target="_blank" class="blog-link">
+                                    Read on LinkedIn →
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact">
+            <!-- Contact section: professional communication entry point -->
+            <div class="contact-wrapper">
+
+                <div class="contact-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p>
+                        Whether it’s a full-time role, internship opportunity, collaboration,
+                        or technical discussion — I’m always open to meaningful conversations.
+                    </p>
+                </div>
+
+                <div class="contact-surface">
+
+                    <!-- LEFT: Direct Contact -->
+                    <div class="contact-direct">
+
+                        <div class="contact-card">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <span>Email</span>
+                                <a href="mailto:vaibhavchougule236@gmail.com">
+                                    vaibhavchougule236@gmail.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <span>Phone</span>
+                                <a href="tel:+918010625721">
+                                    +91 80106 25721
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <div>
+                                <span>WhatsApp</span>
+                                <a href="https://wa.me/918010625721" target="_blank">
+                                    Message directly
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-links">
+                            <a href="https://github.com/vaibhavchougule236" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/vaibhavchougule124/" target="_blank">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- RIGHT: Contact Form -->
+                    <form class="contact-form" id="contact-form">
+
+                        <input type="text" name="from_name" placeholder="Your Name" required>
+                        <input type="email" name="from_email" placeholder="Your Email" required>
+                        <input type="text" name="subject" placeholder="Subject" required>
+                        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+
+                        <button type="submit" class="btn-primary">
+                            Send Message
+                        </button>
+
+                    </form>
+
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+    </main>
+    <footer class="site-footer">
+        <div class="footer-wrapper">
+
+            <!-- Identity -->
+            <div class="footer-brand">
+                <h3>Vaibhav Chougule</h3>
+                <p>
+                    Java Full Stack Engineer focused on building scalable,
+                    secure, and production-grade systems.
+                </p>
+            </div>
+
+            <!-- Navigation -->
+            <div class="footer-nav">
+                <span>Navigate</span>
+                <a href="#hero">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#blogs">Blogs</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <!-- Social -->
+            <div class="footer-social">
+                <span>Connect</span>
+                <div class="social-links">
+                    <a href="https://github.com/vaibhavchougule236" target="_blank" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/vaibhavchougule124/" target="_blank" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:vaibhavchougule236@gmail.com" aria-label="Email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <span>© <span id="year"></span> Vaibhav Chougule</span>
+            <span>Built with care & engineering discipline</span>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
