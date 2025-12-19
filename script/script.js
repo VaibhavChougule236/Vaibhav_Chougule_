@@ -122,36 +122,6 @@ revealSections.forEach(sec => {
 });
 
 
-// const images = document.querySelectorAll(".carousel-image");
-// const popup = document.getElementById("imagePopup");
-// const popupImg = document.getElementById("popupImage");
-// const popupClose = document.getElementById("popupClose");
-
-// images.forEach(img => {
-//     img.addEventListener("click", () => {
-//         const loader = new Image();
-//         loader.src = img.currentSrc || img.src;
-
-//         loader.onload = () => {
-//             popupImg.src = loader.src;
-//             popup.classList.add("active");
-//         };
-//     });
-// });
-
-
-
-// const carouselImages = document.querySelectorAll(".carousel-image");
-// let currentImage = 0;
-
-// function showNextImage() {
-//     carouselImages[currentImage].classList.remove("active");
-//     currentImage = (currentImage + 1) % carouselImages.length;
-//     carouselImages[currentImage].classList.add("active");
-// }
-
-// setInterval(showNextImage, 2500);
-
 /* ================= OPEN SOURCE IMAGE CAROUSEL ================= */
 
 const carouselImages = document.querySelectorAll(".carousel-image");
