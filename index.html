@@ -33,7 +33,6 @@
 <body>
 
     <header class="site-header">
-        <!-- Header: branding, navigation, theme toggle, mobile menu -->
         <div class="header-inner">
             <a href="#hero" class="logo">Vaibhav</a>
 
@@ -73,23 +72,37 @@
             <div class="hero-grid">
 
                 <div class="hero-left">
-                    <span class="hero-chip">Java Full Stack Engineer</span>
+                    <span class="hero-chip">Java Backend / Full Stack Engineer</span>
 
                     <h1 class="hero-title">
                         Hi, I’m <span class="accent">Vaibhav</span><br>
-                        I build scalable software
+                        I build reliable backend systems
                     </h1>
 
                     <p class="hero-subtitle">
-                        I design and develop secure, high-performance full-stack applications
-                        using Java, Spring Boot, modern JavaScript, and cloud-ready architectures.
-                        My focus is on clean APIs, reliable systems, and production-grade solutions.
+                        Java Backend Developer with hands-on experience in building scalable,
+                        secure, and cloud-deployed systems using Spring Boot, Microservices,
+                        SQL, and AWS. I focus on clean architecture, well-designed APIs,
+                        and production-ready solutions that scale.
                     </p>
 
                     <div class="hero-actions">
-                        <a href="#projects" class="btn-primary">View Projects</a>
-                        <a href="#contact" class="btn-outline">Contact Me</a>
+                        <a href="#projects" class="btn-primary">
+                            <i class="fa-solid fa-code"></i>
+                            <span>View Projects</span>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/vaibhavchougule124/" target="_blank" class="btn-outline">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                            <span>LinkedIn</span>
+                        </a>
+
+                        <a href="assets/Vaibhav_Chougule_Resume.pdf" target="_blank" class="btn-outline">
+                            <i class="fa-solid fa-file-arrow-down"></i>
+                            <span>Resume</span>
+                        </a>
                     </div>
+
                 </div>
 
                 <div class="hero-right">
@@ -101,6 +114,7 @@
             </div>
         </section>
 
+
         <section id="about">
             <!-- About section: engineering background and technical focus -->
             <div class="about-grid">
@@ -109,23 +123,22 @@
                     <h2 class="section-title">About Me</h2>
 
                     <p>
-                        I’m a Java Full Stack Engineer with a strong backend foundation and
-                        a practical frontend mindset. I enjoy building scalable systems,
-                        designing secure APIs, and writing clean, maintainable code that
-                        performs reliably in real-world production environments.
+                        I’m a Java Full Stack Engineer with hands-on experience building secure,
+                        scalable web applications using Spring Boot on the backend and modern
+                        JavaScript, HTML, and CSS on the frontend.
                     </p>
 
                     <p>
-                        During my internship and project work, I have developed payment
-                        integration microservices, implemented Spring Security with
-                        encryption-based authentication, and worked with cloud-ready
-                        architectures using AWS and Docker.
+                        Through internships and project work, I’ve designed RESTful APIs,
+                        implemented authentication and authorization with Spring Security,
+                        and built database-driven applications with a focus on clean architecture
+                        and reliability.
                     </p>
 
                     <p>
-                        Beyond internships, I actively work on full-stack projects,
-                        contribute to open source, and continuously strengthen my problem-
-                        solving skills through DSA and system design practice.
+                        I enjoy contributing to open-source projects, building end-to-end systems,
+                        and continuously improving my problem-solving skills through data structures,
+                        algorithms, and system design practice.
                     </p>
                 </div>
 
@@ -143,6 +156,7 @@
 
             </div>
         </section>
+
         <section id="skills">
             <!-- Skills section: core technologies and engineering domains -->
             <div class="skills-wrapper">
@@ -201,7 +215,6 @@
                             <span class="skill-chip">AWS EC2</span>
                             <span class="skill-chip">AWS RDS</span>
                             <span class="skill-chip">Docker</span>
-                            <span class="skill-chip">CI/CD</span>
                             <span class="skill-chip">Linux</span>
                         </div>
                     </div>
@@ -248,7 +261,15 @@
 
                 <div class="projects-grid">
 
+                    <!-- Project 1 -->
                     <article class="project-card">
+
+                        <!-- Image -->
+                        <div class="project-image">
+                            <img src="assets/projects/payment-system.png" alt="Payment Integration System">
+                        </div>
+
+                        <!-- Meta -->
                         <div class="project-meta">
                             <span class="project-tag">Microservices</span>
                             <span class="project-tag">Deployed</span>
@@ -272,12 +293,21 @@
                         </ul>
 
                         <div class="project-actions">
-                            <a href="#" class="project-link">GitHub</a>
-                            <a href="#" class="project-link">Live</a>
+                            <a href="#" class="project-link">View Code</a>
+                            <a href="#" class="project-link">Live Demo</a>
                         </div>
+
                     </article>
 
+                    <!-- Project 2 -->
                     <article class="project-card">
+
+                        <!-- Image -->
+                        <div class="project-image">
+                            <img src="assets/projects/blogging-platform.png" alt="AI Blogging Platform">
+                        </div>
+
+                        <!-- Meta -->
                         <div class="project-meta">
                             <span class="project-tag">Full Stack</span>
                             <span class="project-tag muted">Monolith</span>
@@ -301,12 +331,22 @@
                         </ul>
 
                         <div class="project-actions">
-                            <a href="#" class="project-link">GitHub</a>
+                            <a href="#" class="project-link">View Code</a>
                             <a href="#" class="project-link muted">Architecture</a>
                         </div>
+
                     </article>
 
+                    <!-- Project 3 -->
                     <article class="project-card">
+
+                        <!-- Image -->
+                        <div class="certificate-preview">
+                            <img src="assets/Projects/BMS.png" alt="BMS"
+                                class="cert-img">
+                        </div>
+
+                        <!-- Meta -->
                         <div class="project-meta">
                             <span class="project-tag">Core Java</span>
                             <span class="project-tag muted">Local</span>
@@ -328,14 +368,16 @@
                         </ul>
 
                         <div class="project-actions">
-                            <a href="#" class="project-link">GitHub</a>
+                            <a href="#" class="project-link">View Code</a>
                         </div>
+
                     </article>
 
                 </div>
 
             </div>
         </section>
+
 
         <section id="experience">
             <!-- Experience section: real-world engineering exposure -->

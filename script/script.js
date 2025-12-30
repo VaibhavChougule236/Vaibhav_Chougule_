@@ -321,3 +321,11 @@ contactForm.addEventListener("submit", function (e) {
         }
     );
 });
+
+
+fetch("https://vaibhav-portfolio.goatcounter.com/counter.json")
+  .then(res => res.json())
+  .then(data => {
+    document.getElementById("goatcounter-visits").textContent = data.count;
+  })
+  .catch(() => {});

@@ -305,6 +305,13 @@ section::after {
     gap: 18px;
 }
 
+.hero-actions a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
 .profile-wrapper {
     width: 280px;
     height: 280px;
