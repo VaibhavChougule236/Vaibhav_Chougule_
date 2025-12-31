@@ -102,6 +102,15 @@ sections.forEach(section => observer.observe(section));
 
 
 
+const navLinksMobile = document.querySelectorAll(".nav a");
+
+navLinksMobile.forEach(link => {
+    link.addEventListener("click", () => {
+        nav.classList.remove("active");
+    });
+});
+
+
 
 const revealSections = document.querySelectorAll("section");
 
@@ -329,3 +338,10 @@ fetch("https://vaibhav-portfolio.goatcounter.com/counter.json")
     document.getElementById("goatcounter-visits").textContent = data.count;
   })
   .catch(() => {});
+
+
+  document.body.classList.add("theme-transition");
+
+setTimeout(() => {
+    document.body.classList.remove("theme-transition");
+}, 500);
