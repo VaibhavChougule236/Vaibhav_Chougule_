@@ -312,8 +312,8 @@ contactForm.addEventListener("submit", function (e) {
     submitBtn.textContent = "Sending...";
 
     emailjs.sendForm(
-        "service_rus3ke9",   
-        "template_hnivty7",  
+        "service_rus3ke9",
+        "template_hnivty7",
         this
     ).then(
         () => {
@@ -332,15 +332,7 @@ contactForm.addEventListener("submit", function (e) {
 });
 
 
-fetch("https://vaibhav-portfolio.goatcounter.com/counter.json")
-  .then(res => res.json())
-  .then(data => {
-    document.getElementById("goatcounter-visits").textContent = data.count;
-  })
-  .catch(() => {});
-
-
-  document.body.classList.add("theme-transition");
+document.body.classList.add("theme-transition");
 
 setTimeout(() => {
     document.body.classList.remove("theme-transition");
