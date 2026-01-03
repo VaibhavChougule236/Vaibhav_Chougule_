@@ -30,11 +30,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition:
-        background-color 0.4s ease,
-        color 0.35s ease,
-        border-color 0.35s ease,
-        box-shadow 0.35s ease;
 }
 
 html, body {
@@ -42,6 +37,18 @@ html, body {
         background-color 0.5s ease,
         color 0.4s ease;
 }
+
+body,
+.site-header,
+.project-card,
+.btn-primary,
+.btn-outline {
+    transition:
+        background-color 0.35s ease,
+        color 0.3s ease,
+        border-color 0.3s ease;
+}
+
 
 
 body {
@@ -61,7 +68,7 @@ body {
         radial-gradient(800px 500px at var(--g2x) var(--g2y), rgba(99, 102, 241, 0.10), transparent 45%),
         radial-gradient(1000px 600px at var(--g3x) var(--g3y), rgba(14, 165, 233, 0.08), transparent 50%),
         linear-gradient(180deg, #0b1020 0%, #050814 100%);
-    background-attachment: fixed;
+    background-attachment: scroll;
     transition:
         background 0.6s ease,
         color 0.4s ease;
@@ -1717,10 +1724,6 @@ section::after {
         text-align: center;
     }
 
-    /* .role-points {
-        text-align: left;
-        display: inline-block;
-    } */
 
     .leadership-media {
         height: 220px;
@@ -1841,6 +1844,10 @@ section::after {
     }
     .contact-icons {
         justify-content: center;
+    }
+    .section-reveal {
+        opacity: 1 !important;
+        transform: none !important;
     }
 }
 

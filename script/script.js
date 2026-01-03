@@ -119,11 +119,16 @@ const revealObserver = new IntersectionObserver(
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add("visible");
+                revealObserver.unobserve(entry.target); // 🔥 important
             }
         });
     },
-    { threshold: 0.2 }
+    {
+        threshold: 0.05,
+        rootMargin: "0px 0px -10% 0px"
+    }
 );
+
 
 revealSections.forEach(sec => {
     sec.classList.add("section-reveal");
