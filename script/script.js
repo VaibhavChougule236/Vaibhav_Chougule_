@@ -342,3 +342,11 @@ document.body.classList.add("theme-transition");
 setTimeout(() => {
     document.body.classList.remove("theme-transition");
 }, 500);
+
+
+
+
+window.addEventListener("load", () => {
+    document.querySelector(".profile-wrapper")
+        .style.animation = "float 6s ease-in-out infinite";
+});

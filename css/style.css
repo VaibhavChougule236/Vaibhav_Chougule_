@@ -354,7 +354,7 @@ section::after {
     align-items: center;
     justify-content: center;
     background: linear-gradient(135deg, var(--accent), transparent);
-    animation: float 6s ease-in-out infinite;
+    animation: none;
 }
 
 .profile-wrapper::before {
