@@ -350,3 +350,22 @@ window.addEventListener("load", () => {
     document.querySelector(".profile-wrapper")
         .style.animation = "float 6s ease-in-out infinite";
 });
+
+
+window.addEventListener("load", async () => {
+    
+    if (document.fonts) {
+        await document.fonts.ready;
+    }
+
+    requestAnimationFrame(() => {
+        document.body.classList.remove("loading");
+
+        const loader = document.getElementById("page-loader");
+        loader.style.opacity = "0";
+
+        setTimeout(() => {
+            loader.remove();
+        }, 600);
+    });
+});
