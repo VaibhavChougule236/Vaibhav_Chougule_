@@ -1,14 +1,28 @@
 # Personal Portfolio — Vaibhav Chougule
 
 A personal portfolio website built to present my work as a **Java Backend / Full Stack Engineer**.
-
-This repository represents my approach to building clean, maintainable websites with attention to real-world engineering practices.
-
+  
 ---
 
 ## 🌐 Live Website
+🔗 https://vaibhavchougule.vercel.app/  
 
-🔗 https://vaibhav-chougule.netlify.app  
+---
+
+## 📸 Preview
+> Screenshot of the live portfolio UI
+
+<img width="1901" height="911" alt="image" src="https://github.com/user-attachments/assets/82cfb35e-24d2-4e46-80b0-1bff6078e1ef" />
+
+
+---
+
+## 🧠 Engineering Focus
+This portfolio is designed not just as a UI showcase, but as a **professional developer profile** that highlights:
+- Clean project structure and readable code
+- Performance-aware frontend practices
+- Backend-focused projects (Spring Boot, REST APIs, Security)
+- Practical implementation over theoretical demos
 
 ---
 
@@ -20,24 +34,23 @@ This repository represents my approach to building clean, maintainable websites 
 - **JavaScript** — interaction logic and UI behavior
 
 ### Tooling & Deployment
-- **Netlify** — production hosting and deployment
-- **GitHub** — version control and collaboration
-- **EmailJS** — contact form integration
+- **Netlify** — production hosting and CI/CD deployment
+- **GitHub** — version control and project management
+- **EmailJS** — contact form with real email delivery
 
 ---
 
 ## ✨ Key Features
-
-- Responsive design with mobile-first layout
+- Responsive, mobile-first design
 - Dark and light theme support
+- Clean navigation with section-based layout
 - Structured project showcase
-- Contact form with real email delivery
-- Clean navigation and section-based layout
+- Contact form with real email integration
+- Direct links to backend-focused projects (Spring Boot, APIs, Security)
 
 ---
 
 ## 👤 Author
-
 **Vaibhav Chougule**  
 Java Backend / Full Stack Engineer  
 
