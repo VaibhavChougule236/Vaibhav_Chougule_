@@ -12,7 +12,7 @@ A personal portfolio website built to present my work as a **Java Backend / Full
 ## 📸 Preview
 > Screenshot of the live portfolio UI
 
-<img width="1901" height="911" alt="image" src="https://github.com/user-attachments/assets/82cfb35e-24d2-4e46-80b0-1bff6078e1ef" />
+<img width="1898" height="911" alt="image" src="https://github.com/user-attachments/assets/604d55e9-457a-48b0-9fd1-e6930008107a" />
 
 
 ---
